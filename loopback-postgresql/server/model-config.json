@@ -35,5 +35,9 @@
   "pokemon": {
     "dataSource": "psqlDS",
     "public": true
+  },
+  "test": {
+    "dataSource": "psqlDS",
+    "public": true
   }
 }

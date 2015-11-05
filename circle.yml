@@ -1,0 +1,14 @@
+sudo: required
+language: node_js
+node_js:
+  - "4.2"
+services:
+  - docker
+env:
+  - COUCHBASE="couchbase/server"
+before_install:
+  - ./test/docker-couchbase.sh
+install:
+  - npm install
+script:
+  - npm test
